@@ -4,32 +4,38 @@ import emailjs from 'emailjs-com';
 //Composant devisForm - Etape 1 
 function Step1({ questions, answers, handleAnswerChange }) {
   return (
-<div>
-  {questions.map((question) => (
-    <div className='devis__form-questions' key={question.id}>
-      <label htmlFor={`question-${question.id}`}>
-        {question.question}
-      </label>
-      <select
-        id={`question-${question.id}`}
-        value={answers[question.id] || ''}
-        onChange={(e) =>
-          handleAnswerChange(question.id, e.target.value)
-        }
-        required
-      >
-        <option value="">Sélectionnez une réponse</option>
-        {question.options.map((option, optionIndex) => (
-          <option key={optionIndex} value={option}>
-            {option}
-          </option>
-        ))}
-      </select>
+    <div>
+      {questions.map((question) => (
+        <div className='devis__form-questions' key={question.id}>
+          <label>{question.question}</label>
+          {question.options.map((option, optionIndex) => (
+            <div key={optionIndex}>
+              <input
+                type="checkbox"
+                id={`question-${question.id}-${optionIndex}`}
+                value={option}
+                checked={answers[question.id]?.includes(option)} // Vérifie si l'option est sélectionnée
+                onChange={(e) => {
+                  const isChecked = e.target.checked;
+                  const optionValue = e.target.value;
+                  let updatedAnswers = [...(answers[question.id] || [])]; // Copie des réponses actuelles
+                  if (isChecked) {
+                    updatedAnswers.push(optionValue); // Ajoute l'option sélectionnée
+                  } else {
+                    updatedAnswers = updatedAnswers.filter((value) => value !== optionValue); // Supprime l'option désélectionnée
+                  }
+                  handleAnswerChange(question.id, updatedAnswers); // Met à jour les réponses
+                }}
+              />
+              <label htmlFor={`question-${question.id}-${optionIndex}`}>{option}</label>
+            </div>
+          ))}
+        </div>
+      ))}
     </div>
-  ))}
-</div>
   );
 }
+
 
 //Composant devisForm - Etape 2
 function Step2({ answers, handleAnswerChange }) {

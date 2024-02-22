@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import '../../styles/styles.scss';
 import Menu from '../../components/Menu';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.svg';
 
 
 //import Fontawesome 
@@ -22,9 +22,9 @@ function Header() {
               <a href="tel:+33636869270"><FontAwesomeIcon icon={faPhone} /> 06 36 86 92 70</a>
             </div>
             <div className='header__contact-media'>
-            <Link to="/contact" className="menu__item-link" >
-            Contact
-          </Link>
+              <Link to='/#contact'>
+                contact
+              </Link>
             </div>
           </div>
           

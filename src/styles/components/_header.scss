@@ -1,7 +1,9 @@
 .header {
     @include container;
     margin-bottom: 0;
-
+    &__container{
+        background-color: $darkgreen;
+    }
     &__contact{
         margin: 10px 20px;
         display: flex;
@@ -80,7 +82,17 @@
     justify-content: space-between;
     height: 60px;
 
-    .logo {
-        margin-left: 30px;
+
+}
+.header__logo{
+    display: flex;
+    justify-content: cennter;
+    align-items: center;
+}
+.logo {
+    margin-left: 30px;
+    width: 200px;
+    @include mobile{
+        margin: 0;
     }
 }

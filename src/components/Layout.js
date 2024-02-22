@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-//import Footer from './Footer';
+import Footer from './Footer';
 import LoadingSpinner from './LoadingSpinner';
 
 function Layout({ children }) {
@@ -20,7 +20,7 @@ function Layout({ children }) {
         </div>
 
          {/* Footer */}
-
+         <Footer />
 
       </div>
     );

@@ -62,8 +62,7 @@ h3 {
 
 p {
     text-align: center;
-    color: $green;
-    opacity: 0.45;
+    color: $darkgreen;
 }
 
 .container{
@@ -75,5 +74,4 @@ p {
     display: flex;
     flex-direction: column;
     max-width: 1440px;
-    background-color: $darkgreen;
 }

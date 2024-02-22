@@ -2,7 +2,7 @@ button {
     width: 120px;
     height: 40px;
     font-weight: bold;
-    background: linear-gradient(to bottom right, lighten($darkviolet, 5), lighten($darkgreen, 5));
+    background: $green;
     
     color: $violet;
     box-shadow: $box-shadows;
@@ -28,7 +28,7 @@ button {
         bottom: 0;
         right: 0;
         left: 0;
-        background: $linearGradient;
+        background: $darkgreen;
         opacity: 0;
         z-index: -1;
         border-radius: 50px;

@@ -1,0 +1,78 @@
+/*Card__service*/
+.container__card{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px;
+    border-radius: 20px;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+}
+/*.card-link {
+    text-decoration: none;
+    width: 30%;
+
+    @include mobile {
+        width: 300px;
+    }
+  }
+*/  
+.card {
+    display: flex;
+    flex-direction: column;
+    background: $green;
+    box-shadow: $box-shadows;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    width: 30%;
+
+    @include mobile{
+        width: 100%;
+    }
+    &:hover{
+        transform: scale(1.05);
+        p{color: $violet;
+        opacity: 0.7;}
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+    }
+
+    &__content {
+        text-align: center;
+        color: $darkgreen;
+
+        &-prestation{
+            opacity: 0.45;
+            text-align: left;
+            ul{
+
+                padding: 0;
+            }
+            li{
+                list-style: none;
+                margin: 10px 0;
+            }
+        }
+
+        &-price{
+            font-weight: bold ;
+            color: $green;
+        }
+
+        p {
+            opacity: 1;
+            @include mobile {
+                margin: 0;
+            }
+        }
+    }
+}

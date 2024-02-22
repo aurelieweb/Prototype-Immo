@@ -22,6 +22,8 @@
 .form {
     @include form;
     width: calc(100% - (40px));
+    background-color: $green;
+    color: $darkgreen;
 
     @include mobile {
         flex-direction: column;

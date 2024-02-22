@@ -1,6 +1,8 @@
 import React from "react";
 import ContactForm from '../../components/ContactForm';
 
+const sectionTitle = 'Demandez des informations sur la résidence "Lac Leman" à Thonon';
+
 const questions = [
     {
       id: '1',
@@ -15,7 +17,7 @@ function Contact() {
 
     return (
         <section id='contact'>
-            <h2>Demandez des informations sur la résidence Lac Léman à Thonon</h2>
+            <h2>{sectionTitle}</h2>
             <p className='section-text'>
             Contactez-nous dès maintenant pour obtenir plus d'informations sur notre projet immobilier
             </p>
