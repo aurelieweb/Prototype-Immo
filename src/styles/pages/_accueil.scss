@@ -9,43 +9,6 @@
     }
 }
 
-.apropos__container{
-//    width: 80%;
-    margin: 0 20px;
-    display: flex;
-    justify-content: center;
-
-    @include mobile{
-        flex-direction: column;
-    }
-
-    &-img{
-
-
-        img{
-            width: 300px;
-            height: 100%;
-            opacity: 0.9;
-
-            @include mobile{
-                width: 100%;
-            }
-        }
-    }
-
-    &-text{
-        color: $darkgreen;
-        margin-left: 20px;
-
-        @include mobile {
-            margin-left: 0;
-        }
-        p{
-            text-align: left;
-          }
-    }
-}
-
 
 #aPropos{
     h2{
@@ -58,13 +21,15 @@
 
 #nosProjets  {
     background: white;
-}
+}*/
 
 #contact{
-    background: white;
+    background: $green;
+
+    h2{
+    color: $pink;
+    }
+    p{color:$pink
+    }
 }
 
-#process{
-    background: white;
-}
-*/

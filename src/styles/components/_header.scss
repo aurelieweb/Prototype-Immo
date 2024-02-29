@@ -18,12 +18,14 @@
 
         &-details {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             gap: 20px;
+            width: 50%;
+            background-color: $green;
 
             @include tablet {
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
                 padding: 10px;
                 gap: 10px;
             }
@@ -33,35 +35,33 @@
                 align-items: center;
                 text-decoration: none;
                 display: flex;
-                color: $green;
+                color: $pink;
                 gap: 10px;
 
                 &:hover {
-                    color: $darkviolet;
+                    color: $darkgreen;
                     transform: scale(1.10);
-                }
-
-                @include tablet {
-                    color: $green;
                 }
             }
         }
 
         &-media {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             gap: 20px;
+            width: 50%;
+            background-color: $pink;
 
             @include tablet {
-                justify-content: flex-end;
                 padding: 10px;
                 align-items: flex-start;
             }
 
             a {
-                color: $darkgreen;
+                color: $green;
                 transition: transform 0.3s;
+                text-decoration: none;
 
                 @include tablet {
                     color: $green;

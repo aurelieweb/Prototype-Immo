@@ -6,8 +6,8 @@ const sectionTitle = 'Demandez des informations sur la résidence "Lac Leman" à
 const questions = [
     {
       id: '1',
-      question: "Quel typologie de logement?",
-      options: ['Villa A', 'Villa B', 'Villa C'],
+      question: "Pour quel logement souhaitez vous des informations?",
+      options: ['Villa Elise - T4','Villa Juliette - T5', 'Villa Eugenie - T4', 'Villa Angelique - T3'],
     },
     
     // Ajoutez d'autres questions selon les besoins du client

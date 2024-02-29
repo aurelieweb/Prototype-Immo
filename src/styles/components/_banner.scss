@@ -44,7 +44,6 @@
         }
 
         &-text{
-            color: $green;
             font-size: 21px;
             display: flex;
             flex-direction: column;
@@ -58,6 +57,7 @@
             }
 
             p{
+                color: $pink;
                 opacity: 1;
                 margin: 5px 0;
                 text-align: left;

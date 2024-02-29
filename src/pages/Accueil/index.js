@@ -8,8 +8,8 @@ import Partenaire from '../../sections/Partenaire';
 
 function Accueil() {
 
-    const pageTitle = "Résidence du Leman";
-    const bannerText = "Thonon";
+    const pageTitle = "Bienvenue à la Résidence du Lac, au cœur de Thonon";
+    const bannerText = "Découvrez la douceur de vivre à la Résidence du Lac, un cadre préservé où la quiétude des rives du Leman rencontre l'effervescence culturelle et économique de Thonon";
     
     
     return (

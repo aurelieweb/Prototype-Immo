@@ -13,7 +13,6 @@ function Banner({ pageTitle, bannerText }) {
  {/*}       <p className='banner__content-title'>Aurélie Demetrio</p>*/}
         <h1>{pageTitle}</h1>        
         <div className='banner__content-text'>
-          <p>{bannerText}</p>
         </div>
       </div>
     </div>

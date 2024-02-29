@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import LoadingSpinner from './LoadingSpinner';
 
+
 function Layout({ children }) {
     return (
       <div className='container'>

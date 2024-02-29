@@ -1,6 +1,6 @@
 import React from "react";
 
-const sectionTitle = 'Nos Partenaires Locaux : Un Réseau de Qualité';
+const sectionTitle = 'Nos Partenaires Locaux: Créateurs de votre espace de vie unique';
 const sectionText = 'a compléter';
 
 function Situation () {
@@ -11,8 +11,8 @@ function Situation () {
             <p className='section-text'>
             {sectionText}</p>
             <div>
-                <p>Notre réseau de partenaires locaux soigneusement sélectionnés, comprends des fournisseurs et des artisans qualifiés. Nous collaborons avec des professionnels expérimentés et passionnés, partageant notre engagement envers la qualité.</p>
-                <p>Que vous recherchiez des matériaux de construction de haute qualité, des solutions d'aménagement intérieur sur mesure, ou des services d'entretien et de rénovation, nos partenaires sont là pour répondre à tous vos besoins. Leur savoir-faire et leur expertise garantissent fiablité et qualité aux prestations que nous proposons.</p>
+                <p>Nos partenaires locaux sont les artisans de votre espace de vie idéal. Leur savoir-faire et leur dévouement se reflètent dans chaque détail, créant ainsi un environnement sur mesure qui répond à vos besoins et reflète votre style</p>
+                <p> Faites confiance à leur expertise pour donner vie à votre vision et transformer votre maison en un lieu où vous vous sentez vraiment chez vous.</p>
             </div>
             <div></div>
          </section> 

@@ -1,33 +1,30 @@
-/* Style pour le formulaire */
+//Style pour le formulaire 
 
 #form__section {
     display: flex;
     justify-content: center;
 }
-.contact__form {
-    background-color: $darkgreen;
-    border-radius: 5px;
-    width: 80%;
-    box-shadow: $box-shadow-card;
-    padding: 30px 0;
-    
-    @include mobile{
-        width: 100%;margin-bottom: 30px;
-    }
-
-    h2 {
-    color: $green;
-    }
+.contact__container-form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 .form {
-    @include form;
-    width: calc(100% - (40px));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     background-color: $green;
     color: $darkgreen;
+    gap: 20px;
+
 
     @include mobile {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        width: calc(100% - 40px);
+        padding: 20px;
     }
 
     &-group{
@@ -61,13 +58,9 @@
             font-size: 16px;
         }
     }
-
-    .form-style{
-        width: 100%;
-    }
 }
 
-/*Style Devis Form*/
+/*Style Devis Form
 .container__devis {
     display: flex;
 
@@ -106,7 +99,7 @@
         width: 50%;
         @include form;
         margin: 0 50px 0 0;
-        box-shadow: $box-shadow-card;
+
         
         @include mobile {
             width: 100%;
@@ -153,7 +146,7 @@
 
   #devis__form-group{
     width: 100%;
-  }
+  }*/
 
 /* Style pour les messages d'erreur */
   .error-message {
