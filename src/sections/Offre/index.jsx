@@ -6,7 +6,7 @@ import ImgVillaAngelique from '../../assets/imgProjet.jpeg';
 import ImgVillaEugenie from '../../assets/imgProjet.jpeg';
 
 const sectionTitle = 'Nos biens d\'exception à la résidence Lac Leman';
-const sectionText = 'Découvrez les prestations d\'exception offertes par la Résidence du Lac, où confort, modernité et bien-être se rencontrent harmonieusement. Explorez nos offres pour un style de vie privilégié au cœur d\'un cadre enchanteur.';
+//const sectionText = 'Découvrez les prestations d\'exception offertes par la Résidence du Lac, où confort, modernité et bien-être se rencontrent harmonieusement. Explorez nos offres pour un style de vie privilégié au cœur d\'un cadre enchanteur.';
 
 /*Data services
     name:
@@ -63,11 +63,10 @@ function Offre () {
     return (
         <section id='offre'>
             <h2>{sectionTitle}</h2>
-            <p className='section-text'>{sectionText}</p>
             <div className="offre__description">
               {sectionDescription.map((item, index) => (
                 <div key={index} className="offre__item">
-                  <i className={item.icon}></i>
+                  <span><i className={item.icon}></i></span>
                   <div className="offre__item-details">
                     <h3>{item.name}</h3>
                     <p>{item.description}</p>
@@ -77,7 +76,7 @@ function Offre () {
             </div>
             <div className='container__card'>
               <p className="container__card-text">Chaque villa de la Résidence du Lac possède un charme unique et propose des prestations haut de gamme. Des espaces spacieux aux agencements ingénieux, explorez les détails qui rendent chaque logement exceptionnel. Laissez-vous séduire par le style de vie incomparable offert par la Résidence du Lac.</p>
-              {logementsData.map((logement, index) => (
+              <div className="container__card-div">{logementsData.map((logement, index) => (
                 <Card
                   key={index}
                   logementName={logement.name}
@@ -87,6 +86,7 @@ function Offre () {
                   prestation={logement.prestation}
                 />
               ))}
+              </div>
             </div>
          </section> 
     )

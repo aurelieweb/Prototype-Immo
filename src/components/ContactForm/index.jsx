@@ -120,79 +120,81 @@ function ContactForm({ questions }) {
                 ))}
               </div>
             ))}
-            <div className="form-group">
-              <label htmlFor="nom">Nom :</label>
-              <input
-                type="text"
-                id="nom"
-                className="form-control"
-                value={userData.nom || ''}
-                onChange={(e) => handleFieldChange('nom', e.target.value)}
-                required
-              />
-              {errors.nom && (
-                <div className="error-message">{errors.nom}</div>
-              )}
-            </div>
-            {/* Ajoutez les autres champs ici */}
-            <div className="form-group" id="contact__form-group">
-        <label htmlFor="prenom">Prénom :</label>
-        <input
-        type="text"
-        id="prenom"
-        className="form-control"
-        value={userData.prenom || ''}
-        onChange={(e) => handleFieldChange('prenom', e.target.value)}
-        required
-        />
-        {errors.prenom && (
-          <div className="error-message">{errors.prenom}</div>
-        )}
-      </div>
+            <div className='container__form'>
+              <div className="form-group">
+                <label htmlFor="nom">Nom :</label>
+                <input
+                  type="text"
+                  id="nom"
+                  className="form-control"
+                  value={userData.nom || ''}
+                  onChange={(e) => handleFieldChange('nom', e.target.value)}
+                  required
+                />
+                {errors.nom && (
+                  <div className="error-message">{errors.nom}</div>
+                )}
+              </div>
+              {/* Ajoutez les autres champs ici */}
+              <div className="form-group" id="contact__form-group">
+          <label htmlFor="prenom">Prénom :</label>
+          <input
+          type="text"
+          id="prenom"
+          className="form-control"
+          value={userData.prenom || ''}
+          onChange={(e) => handleFieldChange('prenom', e.target.value)}
+          required
+          />
+          {errors.prenom && (
+            <div className="error-message">{errors.prenom}</div>
+          )}
+        </div>
 
-      <div className="form-group" id="contact__form-group">
-        <label htmlFor="email">E-mail :</label>
-        <input
-        type="email"
-        id="email"
-        className="form-control"
-        value={userData.email || ''}
-        onChange={(e) => handleFieldChange('email', e.target.value)}
-        required
-        />
-        {errors.email && (
-          <div className="error-message">{errors.email}</div>
-        )}
-      </div>
+        <div className="form-group" id="contact__form-group">
+          <label htmlFor="email">E-mail :</label>
+          <input
+          type="email"
+          id="email"
+          className="form-control"
+          value={userData.email || ''}
+          onChange={(e) => handleFieldChange('email', e.target.value)}
+          required
+          />
+          {errors.email && (
+            <div className="error-message">{errors.email}</div>
+          )}
+        </div>
 
-      <div className="form-group" id="contact__form-group">
-        <label htmlFor="telephone">Numéro de téléphone :</label>
-        <input
-        type="tel"
-        id="telephone"
-        className="form-control"
-        value={userData.telephone || ''}
-        onChange={(e) => handleFieldChange('telephone', e.target.value)}
-        required
-        />
-        {errors.telephone && (
-          <div className="error-message">{errors.telephone}</div>
-        )}
-      </div>
+        <div className="form-group" id="contact__form-group">
+          <label htmlFor="telephone">Numéro de téléphone :</label>
+          <input
+          type="tel"
+          id="telephone"
+          className="form-control"
+          value={userData.telephone || ''}
+          onChange={(e) => handleFieldChange('telephone', e.target.value)}
+          required
+          />
+          {errors.telephone && (
+            <div className="error-message">{errors.telephone}</div>
+          )}
+        </div>
 
-      <div className="form-group" id="contact__form-group">
-        <label htmlFor="message">Votre message :</label>
-        <input
-        type="text"
-        id="message"
-        className="form-control"
-        value={userData.message || ''}
-        onChange={(e) => handleFieldChange('message', e.target.value)}
-        required
-        />
-        {errors.tmessage && (
-          <div className="error-message">{errors.message}</div>
-        )}
+        <div className="form-group" id="contact__form-group">
+          <label htmlFor="message">Votre message :</label>
+          <input
+          type="text"
+          id="message"
+          className="form-control"
+          value={userData.message || ''}
+          onChange={(e) => handleFieldChange('message', e.target.value)}
+          required
+          />
+          {errors.tmessage && (
+            <div className="error-message">{errors.message}</div>
+          )}
+        </div>
       </div>
             <div className="buttons">
               <button className='form__button' type="submit">
