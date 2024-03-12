@@ -18,9 +18,6 @@ function Contact() {
     return (
         <section id='contact'>
             <h2>{sectionTitle}</h2>
-            <p className='section-text'>
-            Contactez-nous dès maintenant pour obtenir plus d'informations sur notre projet immobilier
-            </p>
                 < ContactForm questions={questions}/>
          </section> 
     )

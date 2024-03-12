@@ -1,0 +1,36 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur semi-transparente */
+    z-index: 1000; /* Assure que le modal s'affiche au-dessus de tout le reste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+  
+  &__content {
+    max-width: 400px; /* Ajustez la largeur selon vos besoins */
+
+    img{
+        width: 100%;
+    }
+  }
+  
+  &__close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: $green;
+  }
+} 

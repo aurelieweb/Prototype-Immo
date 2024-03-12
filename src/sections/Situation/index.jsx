@@ -1,5 +1,10 @@
 import React from "react";
 
+//import Fontawesome 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import {  faShip, faPlane, faTrain, faBus } from '@fortawesome/free-solid-svg-icons';
+
 const sectionTitle = 'Situation idéale : Proximité des transports en commun et cadre préservé';
 //const sectionText = 'a compléter';
 
@@ -15,6 +20,24 @@ La proximité avec le centre-ville de Thonon-les-Bains permet aux résidents de 
 En résumé, la "Résidence Lac Léman" offre un cadre de vie exceptionnel, combinant confort et proximité avec la nature, tout en étant parfaitement intégrée à la vie urbaine de Thonon-les-Bains.
 
                 </p>
+            </div>
+            <div className="div__container-icon">
+                <div className="situation__icon">
+                    <span className="situation__icon-circle"><FontAwesomeIcon icon={faShip} /></span>
+                    <p className="situation__icon-text">Navette CGN Thonon/Lausanne</p>
+                </div>
+                <div className="situation__icon">
+                    <span className="situation__icon-circle"><FontAwesomeIcon icon={faPlane} /></span>
+                    <p className="situation__icon-text">Aéroport Internationnal de Geneve</p>
+                </div>
+                <div className="situation__icon">
+                    <span className="situation__icon-circle"><FontAwesomeIcon icon={faTrain} /></span>
+                    <p className="situation__icon-text">Gare Ferroviaire</p>
+                </div>
+                <div className="situation__icon">
+                    <span className="situation__icon-circle"><FontAwesomeIcon icon={faBus} /></span> 
+                    <p className="situation__icon-text">Gare Routière</p>
+                </div>
             </div>
          </section> 
     )

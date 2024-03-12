@@ -25,17 +25,27 @@ function Menu() {
       <ul className={`menu__list ${menuOpen ? 'open' : ''}`}>
         <li className="menu__item">
           <Link to="/" className="menu__item-link" onClick={closeMenu}>
+            Accueil
+          </Link>
+        </li>
+        <li className="menu__item">
+          <Link to="/projet" className="menu__item-link" onClick={closeMenu}>
             Projet
           </Link>
         </li>
         <li className="menu__item">
-          <Link to="/service" className="menu__item-link" onClick={closeMenu}>
+          <Link to="/situation" className="menu__item-link" onClick={closeMenu}>
             Situation
           </Link>
         </li>
         <li className="menu__item">
-          <Link to="/nosProjets" className="menu__item-link" onClick={closeMenu}>
+          <Link to="/offre" className="menu__item-link" onClick={closeMenu}>
             Offre
+          </Link>
+        </li>
+        <li className="menu__item">
+          <Link to="/partenaire" className="menu__item-link" onClick={closeMenu}>
+            Partenaires
           </Link>
         </li>
         <li className="menu__item">

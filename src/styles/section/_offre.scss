@@ -25,7 +25,7 @@
     align-items: center;
     border-radius: 10px;
     width: 200px;
-    height: 200px;
+    height: 170px;
     position: relative;
 
     @include mobile{
@@ -56,6 +56,7 @@
       justify-content: center;
       align-items: center;
       width: 20px;
+
       color: $green;
     } 
   }
@@ -63,7 +64,7 @@
   &-details{
     display: flex;
     flex-direction: column;
-
+    margin: 20px 0 0 20px;
     color: $darkgreen;
     width: 85%;
 

@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     width: 80%;
+    padding-bottom: 50px;
 }
 
 .container__form{
@@ -17,27 +18,23 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 30px;
-    .form {
-        /*display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        background-color: $green;
-        color: $darkgreen;
-        gap: 20px;*/
 
+    .form {
 
         @include mobile {
             flex-direction: column;
             align-items: center;
             width: 100%;
-            width: calc(100% - 40px);
             padding: 20px;
+            width: calc(100% - 40px);
+            
         }
 
         &-group{
             display: flex;
             flex-direction: column;
+            color: $pink;
+            opacity: 1;
             width: calc(50% - (10px));
 
             @include mobile {
@@ -169,4 +166,13 @@
   align-items: center;
   color: $green;
   padding: 20px;
+}
+
+.contact__form-questions{
+    margin-top: 50px;
+    color: $pink;
+
+    div{
+        margin-top: 20px;
+    }
 }

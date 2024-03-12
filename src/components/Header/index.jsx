@@ -12,34 +12,28 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   return (
-    <header className="header__container">
+    <header className="header__container" id='accueil'>
         
-
-        <div className='header__contact-container'>
+        <div className='header__logo'>
+          <Link to="/">
+            <img className="logo" src={logo} alt="Logo Aurélie DEMETRIO, L'agence Digitale, développeur freelance " />
+           </Link>
+        </div>   
+        <div className='header__container-contact'>
+ 
           <div className='header__contact'>
             <div className='header__contact-details'>
-              {/*Vérifier la méthode*/}
               <a href="tel:+33636869270"><FontAwesomeIcon icon={faPhone} /></a>
             </div>
             <div className='header__contact-media'>
               <Link to='/#contact'>
                 <FontAwesomeIcon icon={faEnvelope} />
               </Link>
-            </div>
+            </div> 
           </div>
-          
-        </div>
-        <div className='header__logo'>
-          <Link to="/">
-            <img className="logo" src={logo} alt="Logo Aurélie DEMETRIO, L'agence Digitale, développeur freelance " />
-  </Link>
-          {/*<div className='header__logo-text'> 
-            <p>Aurélie Demetrio</p>
-            <p>L'agence Digitale</p>
-  </div>*/}
           <Menu/>
         </div>
-        
+   
     </header>
   );
 }
