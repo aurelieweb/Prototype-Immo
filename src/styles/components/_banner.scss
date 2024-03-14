@@ -2,6 +2,7 @@
     height: 400px;
     width: 100%;
     background-color: $darkgreen;
+    margin-top: 140px;
 
     @include mobile {
         height: 300px;

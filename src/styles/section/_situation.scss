@@ -1,28 +1,31 @@
-.div__container-icon{
+.div__container-icon {
     display: flex;
     justify-content: space-between;
+    overflow: hidden; /* Pour cacher les icônes qui dépassent du conteneur */
 
     @include mobile{
-        flex-wrap: wrap;
+        flex-direction: column;
     }
-
-}
-
-.situation__icon{
+  }
+  
+  .situation__icon {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     width: 150px;
     height: 200px;
+    transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 1s ease; /* Transition de 1 seconde avec une fonction de transition cubic-bezier personnalisée pour le déplacement et une transition d'opacité régulière */
+  
+      @include mobile {
+    width: 100%; /* Largeur maximale sur les écrans mobiles */
+    height: auto; /* Hauteur automatique pour s'adapter au contenu */
+    margin-bottom: 20px; /* Espacement entre les icônes en version mobile */
+  }
 
-    @include mobile{
-        width: 100%;
-        height: 170px;
-    }
-
-    &-circle{
-        display: flex;
+}
+  
+  .situation__icon-circle {
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -30,10 +33,28 @@
     width: 75px;
     height: 75px;
     font-size: 40px;
+    
     color: $pink;
-    }
+  }
+  
+  .situation__icon-text {
+    color: $green;
+  }
+  
+  .situation__icon.hidden-left {
+    transform: translateX(-100%); /* Pour cacher les icônes à gauche */
+    opacity: 0; /* Cacher l'icône en même temps qu'elle se déplace */
+  }
+  
+  .situation__icon.hidden-right {
+    transform: translateX(100%); /* Pour cacher les icônes à droite */
+    opacity: 0; /* Cacher l'icône en même temps qu'elle se déplace */
+  }
 
-    p{
-        color: $green
-    }
+  .situation__icon.hidden-left,
+.situation__icon.hidden-right {
+  @include mobile {
+    transform: translateX(0); /* Aucune transformation sur les écrans mobiles */
+  }
 }
+  

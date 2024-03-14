@@ -13,7 +13,7 @@ function Modal({ logement, onCloseModal }) {
           <p>{logement.description}</p>
           <ul>
             {logement.prestation.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={index}>{item.name}: {item.description}</li>
             ))}
           </ul>
           <p>A partir de: {logement.price}€</p>
@@ -24,3 +24,4 @@ function Modal({ logement, onCloseModal }) {
 }
 
 export default Modal;
+
