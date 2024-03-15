@@ -25,7 +25,7 @@
 .card {
     display: flex;
     flex-direction: column;
-    background: $green;
+    background: $darkgreen;
     box-shadow: $box-shadows;
     border-radius: 10px;
     transition: transform 0.3s;
@@ -48,7 +48,7 @@
 
     &__content {
         text-align: center;
-        color: $darkgreen;
+        color: $pink;
 
         &-prestation{
             opacity: 0.45;
@@ -65,10 +65,11 @@
 
         &-price{
             font-weight: bold ;
-            color: $green;
+
         }
 
         p {
+            color: $green;
             opacity: 1;
             @include mobile {
                 margin: 0;

@@ -4,7 +4,6 @@ import Contact from '../../sections/Contact';
 import Projet from '../../sections/Projet';
 import Situation from '../../sections/Situation';
 import Offre from '../../sections/Offre';
-import Partenaire from '../../sections/Partenaire';
 
 function Accueil() {
 
@@ -19,7 +18,6 @@ function Accueil() {
             <Projet />
             <Situation />
             <Offre />
-            <Partenaire />
             <Contact />
             
             

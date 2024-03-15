@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import Button from '../../components/Button';
+
+const buttonText = 'Envoyer';
 
 function ContactForm({ questions }) {
   const [answers, setAnswers] = useState({});
@@ -197,9 +200,7 @@ function ContactForm({ questions }) {
         </div>
       </div>
             <div className="buttons">
-              <button className='form__button' type="submit">
-                Valider
-              </button>
+            <Button buttonText={buttonText} />
             </div>
           </form>
         </div>

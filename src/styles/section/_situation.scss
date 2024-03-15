@@ -16,11 +16,11 @@
     height: 200px;
     transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 1s ease; /* Transition de 1 seconde avec une fonction de transition cubic-bezier personnalisée pour le déplacement et une transition d'opacité régulière */
   
-      @include mobile {
-    width: 100%; /* Largeur maximale sur les écrans mobiles */
-    height: auto; /* Hauteur automatique pour s'adapter au contenu */
-    margin-bottom: 20px; /* Espacement entre les icônes en version mobile */
-  }
+      /*@include mobile {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; 
+  }*/
 
 }
   
@@ -29,12 +29,12 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background: $green;
+    background: $darkgreen;
     width: 75px;
     height: 75px;
     font-size: 40px;
     
-    color: $pink;
+    color: $green;
   }
   
   .situation__icon-text {
@@ -51,10 +51,11 @@
     opacity: 0; /* Cacher l'icône en même temps qu'elle se déplace */
   }
 
-  .situation__icon.hidden-left,
+/*.situation__icon.hidden-left,
 .situation__icon.hidden-right {
   @include mobile {
-    transform: translateX(0); /* Aucune transformation sur les écrans mobiles */
+    transform: translateX(0); 
+    opacity: 1;
   }
-}
+}*/
   

@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import Card from "../../components/Card";
 import Modal from '../../components/Modal';
+import HeaderPrestation from '../../components/HeaderPrestation';
 import ImgVillaElise from '../../assets/imgProjet.jpeg';
 import ImgVillaJuliette from '../../assets/imgProjet.jpeg';
 import ImgVillaAngelique from '../../assets/imgProjet.jpeg';
 import ImgVillaEugenie from '../../assets/imgProjet.jpeg';
 
 const sectionTitle = 'Nos biens d\'exception à la résidence Lac Leman';
-const sectionText = 'Chaque villa de la Résidence du Lac possède un charme unique et propose des prestations haut de gamme. Des espaces spacieux aux agencements ingénieux, explorez les détails qui rendent chaque logement exceptionnel. Laissez-vous séduire par le style de vie incomparable offert par la Résidence du Lac.'
+const sectionText = (
+  <p>
+    Les villas de la <strong>"Résidence du Lac"</strong> possèdent un charme unique et proposent des prestations haut de gamme. Des espaces spacieux aux agencements ingénieux, explorez les détails qui rendent chaque logement exceptionnel. Laissez-vous séduire par le style de vie incomparable offert par la Résidence du Lac.
+  </p>
+);
 
 const logementsData = [
   { 
@@ -102,9 +107,8 @@ function Offre () {
   return (
     <section id='offre'>
       <h2>{sectionTitle}</h2>
-      <div className="div__container-text">
-        <p>{sectionText}</p>
-        </div>
+      <div className="div__container-text">{sectionText}</div>
+        <HeaderPrestation />
       <div className="container__card">
         {logementsData.map((logement, index) => (
           <Card

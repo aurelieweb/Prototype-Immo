@@ -1,0 +1,40 @@
+.tag{
+    display: flex;
+    align-items: center;
+    background-color: $darkgreen;
+    margin-top: 100px;
+    height: 300px;
+
+    &__title{
+        height: 100%;
+        margin: 0 50px;
+        h2{
+            justify-content: flex-start;
+        }
+        p{
+            color:$pink;
+            text-align: left;
+        }
+    }
+
+    &__details{
+        display: flex;
+        flex-wrap: wrap;
+        &-card {
+            width: 200px;
+            height: 100px;
+            background-color: $green;
+            border-radius: 8px;
+            border: 1px solid #cccccc;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            p{
+                color:$pink;
+            }
+        }
+    }
+}  

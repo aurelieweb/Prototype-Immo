@@ -3,9 +3,9 @@ import '../../styles/styles.scss';
 
 /*Fonction Button*/
 
-function Button({ text }) {
+function Button({ buttonText }) {
   return (
-    <button>{text}</button>
+    <button>{buttonText}</button>
   );
 }
 

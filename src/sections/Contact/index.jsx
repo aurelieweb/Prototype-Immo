@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from '../../components/ContactForm';
 
-const sectionTitle = 'Demandez des informations sur la résidence "Lac Leman" à Thonon';
+const sectionTitle = 'Demandez des informations sur la "Résidence du Lac" à Thonon';
 
 const questions = [
     {

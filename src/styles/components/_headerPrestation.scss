@@ -1,0 +1,30 @@
+.header__prestation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    background-color: $darkgreen;
+    height: 250px;
+  }
+  
+  .header__prestation-details {
+    width: 45%; /* Ajustez la largeur selon vos besoins */
+  }
+  
+  .header__prestation-text, .header__prestation-details {
+    background-color: $pink;
+
+    border-radius: 10px;
+    width: 45%;
+    height: 200px;
+    
+    p{    
+        color: $green;
+  }
+} 
+
+  .header__prestation-details p,
+  .header__prestation-text p {
+    margin-bottom: 10px;
+  }
+  

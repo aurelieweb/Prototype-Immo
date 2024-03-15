@@ -11,13 +11,14 @@
         top: 0; /* Fixe le header en haut de la page */
         max-width: 1440px;
         width: 100%; /* Occupe toute la largeur de la fenêtre */
-        z-index: 1000; /* Assure que le header est au-dessus du contenu */
+        z-index: 800; /* Assure que le header est au-dessus du contenu */
         background-color: $darkgreen; /* Ajoute une couleur de fond */
 
 
         @include mobile{
 
             flex-direction: column-reverse;
+            height: auto;
         }
 
         &-contact{
