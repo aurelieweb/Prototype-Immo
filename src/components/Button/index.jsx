@@ -1,11 +1,9 @@
 import React from 'react';
 import '../../styles/styles.scss';
 
-/*Fonction Button*/
-
-function Button({ buttonText }) {
+function Button({ buttonText, onClick }) {
   return (
-    <button>{buttonText}</button>
+    <button onClick={onClick}>{buttonText}</button>
   );
 }
 

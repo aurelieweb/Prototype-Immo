@@ -47,7 +47,7 @@
                 justify-content: space-between;
                 font-weight: bold;
                 margin-bottom: 8px;
-                opacity: 0.7;
+                opacity: 0.9;
             }
 
             input[type="text"],
@@ -65,93 +65,6 @@
         }
     }
 }
-/*Style Devis Form
-.container__devis {
-    display: flex;
-
-    @include mobile {
-        flex-direction: column;
-    }
-
-    .devis__content {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      margin: 0 50px;
-
-        @include mobile{
-            flex-direction: column-reverse;
-            margin: 0 10px;
-        }
-
-      &-text {
-        margin: 0;
-          p {
-              text-align: left;
-              opacity: 1;
-
-              @include mobile {
-                text-align: center;
-              }
-          }
-      }
-      &-img {
-          max-width: 60%;
-          min-width: 250px;
-      }
-    }
-    .devis__container-form {
-        width: 50%;
-        @include form;
-        margin: 0 50px 0 0;
-
-        
-        @include mobile {
-            width: 100%;
-            margin: 0 0 30px 0;
-            padding: 20px 0;
-        }
-    }
-    
-    .devis__form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        padding: 20px 0;
-        
-        &-msg{
-            display: flex;
-            flex-direction: column;
-            label{
-                margin-bottom: 8px;
-            opacity: 0.7;
-            }
-            #message {
-                min-height: 150px;
-
-            }
-        }
-
-        &-questions {
-            display: flex;
-            flex-direction: column;
-            margin-top: 20px;
-            label {
-                margin-bottom: 8px;
-                opacity: 0.7;
-            }
-        }
-        &-title  {
-            text-align: center;
-        }
-    }
-  }
-
-  #devis__form-group{
-    width: 100%;
-  }*/
 
 /* Style pour les messages d'erreur */
   .error-message {
@@ -171,6 +84,7 @@
 .contact__form-questions{
     margin-top: 50px;
     color: $pink;
+    opacity: 0.9;
 
     div{
         margin-top: 20px;

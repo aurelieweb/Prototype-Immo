@@ -1,30 +1,42 @@
 .header__prestation {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
     align-items: center;
-    background-color: $darkgreen;
-    height: 250px;
+    padding: 0 50px;
+//    background-color: $pink;
+
+
+    &-details {
+      ul {
+  
+        li {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &-text{
+      background-color: $green;
+      width: 45%;
+      height: 200px;
+      p {    
+        color: $pink;
+      }
+    }
   }
   
-  .header__prestation-details {
-    width: 45%; /* Ajustez la largeur selon vos besoins */
-  }
+
   
   .header__prestation-text, .header__prestation-details {
-    background-color: $pink;
-
     border-radius: 10px;
-    width: 45%;
-    height: 200px;
+    padding: 0 20px;
     
-    p{    
-        color: $green;
-  }
+
 } 
 
   .header__prestation-details p,
   .header__prestation-text p {
+    text-align: left;
     margin-bottom: 10px;
   }
   

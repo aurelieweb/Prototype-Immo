@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,34 +23,34 @@ function Menu() {
       )}
       <ul className={`menu__list ${menuOpen ? 'open' : ''}`}>
         <li className="menu__item">
-          <Link to="/" className="menu__item-link" onClick={closeMenu}>
+          <a href="#accueil" className="menu__item-link" onClick={closeMenu}>
             Accueil
-          </Link>
+          </a>
         </li>
         <li className="menu__item">
-          <Link to="/projet" className="menu__item-link" onClick={closeMenu}>
+          <a href="#projet" className="menu__item-link" onClick={closeMenu}>
             Projet
-          </Link>
+          </a>
         </li>
         <li className="menu__item">
-          <Link to="/situation" className="menu__item-link" onClick={closeMenu}>
+          <a href="#situation" className="menu__item-link" onClick={closeMenu}>
             Situation
-          </Link>
+          </a>
         </li>
         <li className="menu__item">
-          <Link to="/offre" className="menu__item-link" onClick={closeMenu}>
+          <a href="#offre" className="menu__item-link" onClick={closeMenu}>
             Offre
-          </Link>
+          </a>
         </li>
         <li className="menu__item">
-          <Link to="/partenaire" className="menu__item-link" onClick={closeMenu}>
+          <a href="#partenaire" className="menu__item-link" onClick={closeMenu}>
             Partenaires
-          </Link>
+          </a>
         </li>
         <li className="menu__item">
-          <Link to="/contact" className="menu__item-link" onClick={closeMenu}>
+          <a href="#contact" className="menu__item-link" onClick={closeMenu}>
             Contact
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>
