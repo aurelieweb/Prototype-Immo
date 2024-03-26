@@ -13,12 +13,12 @@ $darkgreen: #0A1b37;
 $darkviolet: #B89579;
 $violet: #E6D8CE;
 $pink: #E6D8CE;
-$darkgreen-opacity: rgba(30, 43, 59, 0.3);
+//$darkgreen-opacity: rgba(30, 43, 59, 0.3);
 
 
-$box-shadows: 0px 0px 5px $violet;
-$box-shadows-hover: 0px 0px 5px $violet;
-$box-shadow-card: 0px 1px 2px $darkgreen;
+$box-shadows: 2px 2px 5px  $green;
+$box-shadows-hover: 0px 0px 5px $pink;
+$box-shadow-card: 2px 2px 5px $darkgreen;
 /*$box-shadows-hover: 0px 5px 10px rgb(226, 230, 173);*/
 
 $linearGradient: linear-gradient(to bottom right, lighten($darkviolet, 5), lighten($darkgreen, 5));

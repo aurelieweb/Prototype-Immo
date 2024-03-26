@@ -4,7 +4,8 @@
     overflow: hidden; /* Pour cacher les icônes qui dépassent du conteneur */
 
     @include mobile{
-        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
     }
   }
   
@@ -15,13 +16,10 @@
     width: 150px;
     height: 200px;
     transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 1s ease; /* Transition de 1 seconde avec une fonction de transition cubic-bezier personnalisée pour le déplacement et une transition d'opacité régulière */
-  
-      /*@include mobile {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px; 
-  }*/
 
+    @include mobile {
+      height: 180px;
+    }
 }
   
   .situation__icon-circle {
@@ -32,8 +30,7 @@
     background: $darkgreen;
     width: 75px;
     height: 75px;
-    font-size: 40px;
-    
+    font-size: 40px; 
     color: $green;
   }
   

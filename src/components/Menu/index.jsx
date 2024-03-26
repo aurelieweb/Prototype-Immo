@@ -29,7 +29,7 @@ function Menu() {
         </li>
         <li className="menu__item">
           <a href="#projet" className="menu__item-link" onClick={closeMenu}>
-            Projet
+            Notre Projet
           </a>
         </li>
         <li className="menu__item">
@@ -40,11 +40,6 @@ function Menu() {
         <li className="menu__item">
           <a href="#offre" className="menu__item-link" onClick={closeMenu}>
             Offre
-          </a>
-        </li>
-        <li className="menu__item">
-          <a href="#partenaire" className="menu__item-link" onClick={closeMenu}>
-            Partenaires
           </a>
         </li>
         <li className="menu__item">

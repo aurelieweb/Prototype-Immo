@@ -8,7 +8,7 @@ import Offre from '../../sections/Offre';
 function Accueil() {
 
     const pageTitle = "Bienvenue à la Résidence du Lac, au cœur de Thonon";
-    const bannerText = "Découvrez la douceur de vivre à la Résidence du Lac, un cadre préservé où la quiétude des rives du Leman rencontre l'effervescence culturelle et économique de Thonon";
+    const bannerText = "Découvrez la douceur de vivre à la Résidence du Lac, entre quiétude des rives du Léman et effervescence culturelle de Thonon.";
     
     
     return (

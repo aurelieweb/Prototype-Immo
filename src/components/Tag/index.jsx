@@ -5,7 +5,7 @@ function Tag() {
     <div className="tag">
       <div className="tag__title">
         <h2>Explorez notre projet immobilier</h2>
-        <p>Découvrez notre résidence d'exception, alliant élégance, confort et cadre de vie idyllique au bord du lac Léman. Voici quatre mots-clés pour décrire notre projet :</p>
+        <p>Découvrez les atouts de notre résidence d'exception, idéalement située au bord du Lac Léman. Notre projet offre des lieux de vie exceptionnels</p>
       </div>
       <div className="tag__details">
         <div className="tag__details-card">
@@ -18,7 +18,7 @@ function Tag() {
           <p>Espaces de vie spacieux et lumineux</p>
         </div>
         <div className="tag__details-card">
-          <p>Intégration harmonieuse avec la nature environnante</p>
+          <p>Nichée aux portes de Thonon</p>
         </div>
       </div>
     </div>

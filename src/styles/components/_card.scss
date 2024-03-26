@@ -13,20 +13,12 @@
         padding: 20px;
     }
 }
-/*.card-link {
-    text-decoration: none;
-    width: 30%;
 
-    @include mobile {
-        width: 300px;
-    }
-  }
-*/  
 .card {
     display: flex;
     flex-direction: column;
     background: $darkgreen;
-    box-shadow: $box-shadows;
+    box-shadow: $box-shadow-card;
     border-radius: 10px;
     transition: transform 0.3s;
     width: 30%;

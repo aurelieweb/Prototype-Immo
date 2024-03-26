@@ -5,21 +5,47 @@
     margin-top: 100px;
     height: 300px;
 
+    @include mobile {
+        flex-direction: column;
+        height: auto;
+        margin-top: 30px;
+    }
+
     &__title{
         height: 100%;
         margin: 0 50px;
+
+        @include mobile {
+            margin: 0 20px;
+        }
+
+        @include tablet {
+            width: 60%;
+        }
         h2{
             justify-content: flex-start;
         }
         p{
             color:$pink;
             text-align: left;
+
+            @include mobile{
+                text-align: center;
+            }
         }
     }
 
     &__details{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+
+        @include mobile{
+            flex-wrap: wrap;
+            padding-bottom: 20px;
+
+        }
+
         &-card {
             width: 200px;
             height: 100px;
@@ -27,12 +53,20 @@
             border-radius: 8px;
             border: 1px solid #cccccc;
             margin: 10px;
+            padding: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
+            box-shadow: $box-shadows;
+
+            @include mobile {
+                width: 120px;
+                height: 80px;
+            }
 
             p{
+                margin: 0;
                 color:$pink;
                 opacity: 0.9;
             }

@@ -16,11 +16,11 @@ function Banner({ pageTitle, bannerText }) {
     <div className="banner" id='accueil'>
       <img className="banner__image" src={ImgBanner} alt="Banner" />
       <div className="banner__content">
-        <h1>{pageTitle}</h1>        
+        <h1 className='banner__content-title'>{pageTitle}</h1>        
         <div className='banner__content-text'>
           <p>{bannerText}</p>
         </div>
-        <Button buttonText={buttonText} onClick={scrollToContactForm} />
+        <Button className='banner__btn' buttonText={buttonText} onClick={scrollToContactForm} />
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
 import '../../styles/styles.scss';
 import Menu from '../../components/Menu';
 import logo from '../../assets/logo.svg';
@@ -7,17 +6,16 @@ import logo from '../../assets/logo.svg';
 
 //import Fontawesome 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import { faFacebookF, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   return (
-    <header className="header__container" id='accueil'>
+    <header className="header__container" >
         
         <div className='header__logo'>
-          <Link to="/">
+          <a href="#accueil">
             <img className="logo" src={logo} alt="Logo Aurélie DEMETRIO, L'agence Digitale, développeur freelance " />
-           </Link>
+           </a>
         </div>   
         <div className='header__container-contact'>
  
@@ -26,9 +24,9 @@ function Header() {
               <a href="tel:+33636869270"><FontAwesomeIcon icon={faPhone} /></a>
             </div>
             <div className='header__contact-media'>
-              <Link to='/#contact'>
+              <a href="/#contact">
                 <FontAwesomeIcon icon={faEnvelope} />
-              </Link>
+              </a>
             </div> 
           </div>
           <Menu/>

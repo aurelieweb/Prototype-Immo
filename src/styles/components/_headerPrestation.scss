@@ -5,12 +5,35 @@
     padding: 0 50px;
 //    background-color: $pink;
 
+@include mobile {
+  flex-direction: column;
+  padding: 0 20px;
+}
+
 
     &-details {
+      padding: 0 20px;
+
+      @include mobile {
+        padding: 0;
+      }
+
+      p{
+
+        text-align: left;
+
+        @include mobile {
+          margin-top: 0;
+        }
+      }
       ul {
   
         li {
           font-size: 18px;
+
+          @include mobile {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -19,24 +42,38 @@
       background-color: $green;
       width: 45%;
       height: 200px;
-      p {    
+      padding: 0 20px;
+
+      @include mobile {
+        width: auto;
+        height: auto;
+      }
+
+      @include tablet {
+        height: auto;
+      }
+      
+      p {  
+        text-align: left;  
         color: $pink;
+
+        @include mobile {
+          text-align: center;
+        }
       }
     }
   }
   
 
   
-  .header__prestation-text, .header__prestation-details {
-    border-radius: 10px;
-    padding: 0 20px;
-    
+.header__prestation-text, .header__prestation-details {
 
+  border-radius: 10px;
 } 
 
-  .header__prestation-details p,
-  .header__prestation-text p {
-    text-align: left;
-    margin-bottom: 10px;
-  }
+.header__prestation-details p,
+.header__prestation-text p {
+
+  margin-bottom: 10px;
+}
   

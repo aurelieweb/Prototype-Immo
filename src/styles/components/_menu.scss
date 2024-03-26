@@ -54,14 +54,15 @@
 
             right: 5px;
             z-index: 100;
-            background: #add9cc;
-            color: #1c3940;
+            background: $green;
+            color: $pink;
             width: 30px;
             height: 20px;
             }
         
         &__burger {
             display: none;
+            box-shadow: $box-shadows;
 
             @include mobile{
                 display: flex;
@@ -98,7 +99,7 @@
                 transition: max-height 0.3s ease-in-out;
                 
                 &.open{
-                    max-height: 260px;
+                    max-height: 360px;
                     padding-top: 40px;
                     width: 100%;
                     z-index: 99;
@@ -109,8 +110,15 @@
         &__item{
 
             @include mobile {
+                
                 height: 30px;
+
+                &:last-child {
+                    margin-bottom: 30px;
+                }
             }
+
+
 
             &:hover {
                 @include mobile{

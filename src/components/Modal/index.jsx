@@ -9,8 +9,10 @@ function Modal({ logement, onCloseModal }) {
             ✕
           </button>
           <img src={logement.imageUrl} alt={logement.name} className="modal__image" />
-          <h3>{logement.name}</h3>
-          <p>{logement.description}</p>
+          <div className='modal__content-title'>
+            <h3>{logement.name}</h3>
+            <p>{logement.description}</p>
+          </div>
           <ul>
             {logement.prestation.map((item, index) => (
               <li key={index}>{item.name}: {item.description}</li>
