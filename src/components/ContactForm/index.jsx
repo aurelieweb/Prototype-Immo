@@ -59,7 +59,7 @@ function ContactForm({ questions }) {
 
   const sendEmail = () => {
     const emailParams = {
-      to_email: 'contact@adlagencedigitale.fr',
+      to_email: 'contact@aureliedemetrio.fr',
       ...userData,
       message: userData.message || 'N/A',
     };
@@ -71,11 +71,11 @@ function ContactForm({ questions }) {
 
     console.log('EmailParams:', emailParams);
 
-    const emailUserId = process.env.REACT_APP_EMAILJS_USERID;
+    const emailPublicKey = process.env.REACT_APP_EMAILJS_PUBLICKEY;
     const emailService = process.env.REACT_APP_EMAILJS_SERVICE;
     const emailTemplate = process.env.REACT_APP_EMAILJS_TEMPLATE;
     
-    emailjs.send(emailService, emailTemplate, emailParams, emailUserId)
+    emailjs.send(emailService, emailTemplate, emailParams, emailPublicKey)
       .then((response) => {
         console.log('Email envoyé avec succès :', response);
       })
@@ -194,7 +194,7 @@ function ContactForm({ questions }) {
           onChange={(e) => handleFieldChange('message', e.target.value)}
           required
           />
-          {errors.tmessage && (
+          {errors.message && (
             <div className="error-message">{errors.message}</div>
           )}
         </div>

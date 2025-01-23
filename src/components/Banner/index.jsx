@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../../components/Button';
 import '../../styles/styles.scss';
-import ImgBanner from '../../assets/imgBanner.jpeg';
+import ImgBanner from '../../assets/imgBanner.jpg';
 
 const buttonText = 'Demander plus d\'infos';
 
@@ -9,7 +9,11 @@ const buttonText = 'Demander plus d\'infos';
 function Banner({ pageTitle, bannerText }) {
   const scrollToContactForm = () => {
     const contactFormSection = document.getElementById('contact');
-    contactFormSection.scrollIntoView({ behavior: 'smooth' });
+    if (contactFormSection) {
+      contactFormSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      console.error('Section "contact" introuvable dans le DOM.');
+    }
   };
 
   return (
@@ -20,7 +24,11 @@ function Banner({ pageTitle, bannerText }) {
         <div className='banner__content-text'>
           <p>{bannerText}</p>
         </div>
-        <Button className='banner__btn' buttonText={buttonText} onClick={scrollToContactForm} />
+        <Button 
+          className='banner__btn' 
+          buttonText={buttonText} 
+          onClick={scrollToContactForm} 
+        />
       </div>
     </div>
   );

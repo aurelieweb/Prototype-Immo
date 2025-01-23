@@ -52,6 +52,7 @@
       }
         li{
           margin-bottom: 10px;
+          list-style: square;
 
           @include mobile {
             font-size: 14px;

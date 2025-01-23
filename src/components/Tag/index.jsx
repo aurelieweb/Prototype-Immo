@@ -9,16 +9,16 @@ function Tag() {
       </div>
       <div className="tag__details">
         <div className="tag__details-card">
-          <p>Vue panoramique sur le lac Léman</p>
+          <h4>Vue panoramique sur le lac Léman</h4>
         </div>
         <div className="tag__details-card">
-          <p>Résidence de standing haut de gamme</p>
+          <h4>Résidence de standing haut de gamme</h4>
         </div>
         <div className="tag__details-card">
-          <p>Espaces de vie spacieux et lumineux</p>
+          <h4>Espaces de vie spacieux et lumineux</h4>
         </div>
         <div className="tag__details-card">
-          <p>Nichée aux portes de Thonon</p>
+          <h4>Nichée aux portes de Thonon</h4>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import ImgProjet from '../../assets/imgProjet.jpeg';
+import ImgProjet from '../../assets/ImgVillaThonon.jpg';
 import Tag from "../../components/Tag"; // Importez le composant Tag ici
 
 const sectionTitle = 'Découvrez notre projet : Une résidence de standing au bord du Lac Léman';

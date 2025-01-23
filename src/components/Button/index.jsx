@@ -1,10 +1,13 @@
 import React from 'react';
 import '../../styles/styles.scss';
 
-function Button({ buttonText, onClick }) {
+function Button({ buttonText = 'Cliquer ici', onClick = () => {}, className }) {
   return (
-    <button onClick={onClick}>{buttonText}</button>
+    <button onClick={onClick} className={className}>
+      {buttonText}
+    </button>
   );
 }
+
 
 export default Button;

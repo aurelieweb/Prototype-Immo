@@ -30,6 +30,7 @@
   
         li {
           font-size: 18px;
+          color:$darkgreen;
 
           @include mobile {
             font-size: 16px;
@@ -39,10 +40,9 @@
     }
 
     &-text{
-      background-color: $green;
+      background-color: $darkgreen;
       width: 45%;
-      height: 200px;
-      padding: 0 20px;
+      padding: 20px;
 
       @include mobile {
         width: auto;

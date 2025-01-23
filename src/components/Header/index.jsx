@@ -21,10 +21,10 @@ function Header() {
  
           <div className='header__contact'>
             <div className='header__contact-details'>
-              <a href="tel:+33636869270"><FontAwesomeIcon icon={faPhone} /></a>
+              <a href="tel:+33636869270" aria-label="Accédez à la section contact"><FontAwesomeIcon icon={faPhone} /></a>
             </div>
             <div className='header__contact-media'>
-              <a href="/#contact">
+            <a href="#contact" aria-label="Accédez à la section contact">
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
             </div> 

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Card from "../../components/Card";
 import Modal from '../../components/Modal';
 import HeaderPrestation from '../../components/HeaderPrestation';
-import ImgVillaElise from '../../assets/imgProjet.jpeg';
-import ImgVillaJuliette from '../../assets/imgProjet.jpeg';
-import ImgVillaAngelique from '../../assets/imgProjet.jpeg';
-import ImgVillaEugenie from '../../assets/imgProjet.jpeg';
+import ImgVillaElise from '../../assets/ImgVillaThonon.jpg';
+import ImgVillaJuliette from '../../assets/ImgVillaThonon.jpg';
+import ImgVillaAngelique from '../../assets/ImgVillaThonon.jpg';
+import ImgVillaEugenie from '../../assets/ImgVillaThonon.jpg';
 
 const sectionTitle = 'Nos biens d\'exception à la résidence du Lac';
 const sectionText = (

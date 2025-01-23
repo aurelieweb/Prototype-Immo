@@ -57,8 +57,9 @@
             display: flex;
 
             &-link{
-                opacity: 0.45;
+                //opacity: 0.45;
                 margin: 2.5px;
+                color: $pink;
             }
 
             &:hover {

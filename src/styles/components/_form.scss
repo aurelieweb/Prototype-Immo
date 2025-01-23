@@ -20,7 +20,6 @@
     margin-top: 30px;
 
     .form {
-        flex-direction: column;
 
         @include mobile {
             flex-direction: column;
@@ -34,7 +33,7 @@
         &-group{
             display: flex;
             flex-direction: column;
-            color: $pink;
+            color: $darkgreen;
             opacity: 1;
             width: calc(50% - (10px));
 
@@ -84,7 +83,7 @@
 
 .contact__form-questions{
     margin-top: 50px;
-    color: $pink;
+    color: $darkgreen;
     opacity: 0.9;
 
     div{
